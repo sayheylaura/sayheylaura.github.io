@@ -2,10 +2,10 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://lauraferrandof.github.io/",
-  author: "Laura Ferrando Ferrero",
+  author: "Laura Ferrando",
   desc: "My journey to frontend development and beyond",
   title: "The Hitchhiker's Guide to the Web",
-  ogImage: "og.jpg",
+  ogImage: "og.png",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 3,

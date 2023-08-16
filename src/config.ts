@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Laura Ferrando",
   desc: "My journey to frontend development and beyond",
   title: "The Hitchhiker's Guide to the Web",
-  ogImage: "og.png",
+  ogImage: "/og-image.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

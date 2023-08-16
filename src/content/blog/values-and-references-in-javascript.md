@@ -34,7 +34,7 @@ To understand how immutability works, we need to reconsider how we think about v
 Let's say we have the following code snippet:
 
 ```javascript
-let greeting = "hello";
+let greeting = 'hello';
 ```
 
 When someone starts learning JavaScript for the first time, usually they are told that variables are boxes that _hold_ values:
@@ -48,8 +48,8 @@ However, it's more accurate to think about variables _pointing to_ values:
 **Primitive values are immutable**. When we reassign a variable that points to an immutable value, we are not changing the value itself. If we do this:
 
 ```javascript
-let greeting = "hello";
-greeting = "hi";
+let greeting = 'hello';
+greeting = 'hi';
 ```
 
 We are just changing _to what value the variable is pointing to_:
@@ -63,7 +63,7 @@ This means that the difference between `let` and `const` variables is not whethe
 Consider now this piece of code:
 
 ```javascript
-let greeting = "hello";
+let greeting = 'hello';
 let welcome = greeting;
 ```
 
@@ -74,9 +74,9 @@ Initially, both `greeting` and `welcome` point to the same value:
 If we reassign the `greeting` variable, will the value of `welcome` also change?
 
 ```javascript
-let greeting = "hello";
+let greeting = 'hello';
 let welcome = greeting;
-greeting = "hi";
+greeting = 'hi';
 ```
 
 Not really! After reassigning the `greeting` variable, it will point to the new value, but the `welcome` variable still points to the original value:
@@ -91,13 +91,13 @@ At first, it may seem that they work the same as primitive values. Consider this
 
 ```javascript
 let person = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 person = {
-  name: "Sally",
-  lastName: "Lockhart",
+  name: 'Sally',
+  lastName: 'Lockhart',
 };
 ```
 
@@ -115,11 +115,11 @@ All properties are like variables inside the object, but _each property also poi
 
 ```javascript
 let person = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
-person.lastName = "Lockhart";
+person.lastName = 'Lockhart';
 ```
 
 This is what's happening under the hood:
@@ -134,8 +134,8 @@ Consider this piece of code:
 
 ```javascript
 let person = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 let personCopy = person;
@@ -149,12 +149,12 @@ Can you guess what would happen if we updated the `lastName` property on the `pe
 
 ```javascript
 let person = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 let personCopy = person;
-personCopy.lastName = "Lockhart";
+personCopy.lastName = 'Lockhart';
 
 console.log(personCopy.lastName); // ??
 console.log(person.lastName); // ??
@@ -170,12 +170,12 @@ If we wanted to avoid accidentally mutating our object, we would need to **creat
 
 ```javascript
 let person = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 let personCopy = { ...person };
-personCopy.lastName = "Lockhart";
+personCopy.lastName = 'Lockhart';
 
 console.log(personCopy.lastName); // "Lockhart"
 console.log(person.lastName); // "Doe"
@@ -187,13 +187,13 @@ Consider now this piece of code:
 
 ```javascript
 let person1 = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 let person2 = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 console.log(person1 === person2); // ??
@@ -215,13 +215,13 @@ As we can see, `person1` and `person2` are _pointing to two different object ref
 
 ```javascript
 let person1 = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 let person2 = {
-  name: "Jane",
-  lastName: "Doe",
+  name: 'Jane',
+  lastName: 'Doe',
 };
 
 console.log(person1 === person2); // false

@@ -10,7 +10,7 @@ import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SITE, SOCIALS } from "@config";
 
-const posts = await getCollection("blog");
+const posts = await getCollection('blog');
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
@@ -42,11 +42,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        This is a collection of my learnings about frontend development (and beyond). I try to explain concepts the way I would've loved to read about them when I was just starting. It will keep growing as I review fundamentals and explore new topics 🌱
+        This is a collection of my learnings about frontend development (and
+        beyond). I try to explain concepts the way I would've loved to read
+        about them when I was just starting. It will keep growing as I review
+        fundamentals and explore new topics 🌱
       </p>
-      <p>
-        Onwards!
-      </p>
+      <p>Onwards!</p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (

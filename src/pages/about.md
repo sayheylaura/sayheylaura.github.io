@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: 'About'
 ---
 
 👋 Hey there! I'm Laura, a frontend developer from Spain ☀️

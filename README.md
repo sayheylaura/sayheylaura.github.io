@@ -22,9 +22,13 @@ If you want to take a look at this project locally, run the following commands:
 
 ```bash
 git clone https://github.com/lauraferrandof/lauraferrandof.github.io.git
+```
 
-npm i
+```bash
+npm install
+```
 
+```bash
 npm run dev
 ```
 
@@ -51,7 +55,7 @@ npm run dev
 
 ## ✨ Feedback & Suggestions
 
-If you have any suggestions/feedback, you can contact me via [email](mailto:lauraferrandof@gmail.com). Alternatively, feel free to open an issue if you find bugs or want to request new topics for the blog!.
+If you have any suggestions/feedback, you can contact me via [email](mailto:lauraferrandof@gmail.com). Alternatively, feel free to open an issue if you find bugs or want to request new topics for the blog!
 
 ## 📜 License
 

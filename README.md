@@ -6,14 +6,14 @@ This is a collection of my learnings about frontend development (and beyond). I 
 
 This blog has been created with the awesome [AstroPaper template](https://github.com/satnaing/astro-paper). My goal was to start publishing content quickly, therefore only minimal changes have been implemented to make it mine.
 
-**Main Framework** - [Astro](https://astro.build/)
-**Type Checking** - [TypeScript](https://www.typescriptlang.org/)
-**Component Framework** - [ReactJS](https://reactjs.org/)
-**Styling** - [TailwindCSS](https://tailwindcss.com/)
-**Fuzzy Search** - [FuseJS](https://fusejs.io/)
-**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)
-**Linting** - [ESLint](https://eslint.org)
-**Code Formatting** - [Prettier](https://prettier.io/)
+**Main Framework** - [Astro](https://astro.build/)  
+**Type Checking** - [TypeScript](https://www.typescriptlang.org/)  
+**Component Framework** - [ReactJS](https://reactjs.org/)  
+**Styling** - [TailwindCSS](https://tailwindcss.com/)  
+**Fuzzy Search** - [FuseJS](https://fusejs.io/)  
+**Icons** - [Boxicons](https://boxicons.com/) | [Tablers](https://tabler-icons.io/)  
+**Linting** - [ESLint](https://eslint.org)  
+**Code Formatting** - [Prettier](https://prettier.io/)  
 **Deployment** - [GitHub Pages](https://pages.github.com/)
 
 ## 👩‍💻 Getting Started

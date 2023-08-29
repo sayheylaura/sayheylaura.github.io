@@ -1,6 +1,6 @@
 ---
 author: Laura Ferrando Ferrero
-pubDatetime: 2023-08-29T14:46:00.737Z
+pubDatetime: 2023-08-29T17:13:00.737Z
 title: Type coercion in JavaScript
 postSlug: type-coercion-in-javascript
 featured: true

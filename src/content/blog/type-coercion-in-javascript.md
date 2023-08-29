@@ -15,13 +15,15 @@ Unlike other programming languages, JavaScript does not have static typing: valu
 
 ## Table of contents
 
+## What the heck is type coercion?
+
 **Type coercion** is the _implicit_ conversion of a value from one data type to another. It occurs in JavaScript because it's a **dynamically typed language**: value types are not declared explicitly, but inferred by the interpreter at runtime.
 
 Because of this feature, when values of different data types are compared or used together in an expression, some of them may be implicitly coerced into another data type.
 
 ## Kinds of type coercion
 
-Let's take a look at the main kinds of type coercion in JavaScript!
+Let's now take a look at the main kinds of type coercion in JavaScript!
 
 ### Number (and other value types) to String coercion
 
@@ -195,7 +197,7 @@ console.log(Number(a));
 // 5
 ```
 
-# Recap
+## Recap
 
 Let’s review the main ideas we’ve learned in this post:
 
@@ -204,7 +206,7 @@ Let’s review the main ideas we’ve learned in this post:
 3. Using the **strict equality operators** (`===` and `!==`) is recommended to avoid errors.
 4. **Type conversion** can be implicit of explicit. We explicitely convert a value into another data type by using the appropriate constructor function.
 
-# Bonus
+## Bonus
 
 We've mainly discussed about how type coercion works with primitive types. If you want to dig deeper into the topic, here are a couple of articles that also go over how non-primitive types (mainly arrays and objects) are coerced:
 

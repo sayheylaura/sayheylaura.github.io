@@ -1,6 +1,6 @@
 ---
 author: Laura Ferrando Ferrero
-pubDatetime: 2023-08-16T13:20:00.737Z
+pubDatetime: 2023-08-16T15:20:00.737Z
 title: Values and References in JavaScript
 postSlug: values-and-references-in-javascript
 featured: true

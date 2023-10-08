@@ -39,11 +39,11 @@ let greeting = 'hello';
 
 When someone starts learning JavaScript for the first time, usually they are told that variables are boxes that _hold_ values:
 
-![](https://hackmd.io/_uploads/r1ne7OYsn.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/dc74b1a8-826b-4426-9838-bbfc06d41f13)
 
 However, it's more accurate to think about variables _pointing to_ values:
 
-![](https://hackmd.io/_uploads/ByNAM_Yo2.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/6cf0a6bf-3c07-49c9-94a2-d396002c10d1)
 
 **Primitive values are immutable**. When we reassign a variable that points to an immutable value, we are not changing the value itself. If we do this:
 
@@ -54,7 +54,7 @@ greeting = 'hi';
 
 We are just changing _to what value the variable is pointing to_:
 
-![](https://hackmd.io/_uploads/SJPC7_Fsh.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/483770e6-78c7-43aa-bc90-357e5bf1b5a0)
 
 The old value remains unchanged. It's not possible to update it (the value itself) in any way. If there aren't any variables pointing to that value, and therefore it's not being used, the JavaScript engine will eventually delete it in a process called **garbage collection**.
 
@@ -69,7 +69,7 @@ let welcome = greeting;
 
 Initially, both `greeting` and `welcome` point to the same value:
 
-![](https://hackmd.io/_uploads/rJnN4qKi3.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/a69f4778-7d88-43d3-a557-c05c4e46190b)
 
 If we reassign the `greeting` variable, will the value of `welcome` also change?
 
@@ -81,7 +81,7 @@ greeting = 'hi';
 
 Not really! After reassigning the `greeting` variable, it will point to the new value, but the `welcome` variable still points to the original value:
 
-![](https://hackmd.io/_uploads/SkRXsV9i2.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/bd79757d-f508-4d7d-9d2d-ce56357e3b51)
 
 ### Reference values
 
@@ -103,13 +103,13 @@ person = {
 
 If we reassign the `person` variable to a different object, the original object will be left alone, and the variable will just point to a new one:
 
-![](https://hackmd.io/_uploads/Hyy96dKih.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/d58058ad-9d36-4e20-8365-c4cdc36d8934)
 
 But... what happens if we update a _property_ of the object?
 
 To understand it better, let's change a bit our object representation:
 
-![](https://hackmd.io/_uploads/r1VMRuto3.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/681a8503-0aa5-426c-82fd-7f1f32195e6b)
 
 All properties are like variables inside the object, but _each property also points to a value, just like a regular variable does_. So, if we update one of the properties:
 
@@ -124,7 +124,7 @@ person.lastName = 'Lockhart';
 
 This is what's happening under the hood:
 
-![](https://hackmd.io/_uploads/SyTWlqFon.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/61b0c246-57a8-40e3-82e4-f8ff8f908166)
 
 The object is still the same, but one of its properties has been _mutated_, and now points to a different value.
 
@@ -143,7 +143,7 @@ let personCopy = person;
 
 As we've learned so far, both `person` and `personCopy` would point to the same object:
 
-![](https://hackmd.io/_uploads/SyXYvc1h2.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/c69ffb8d-4431-45b4-9b87-b960cd94de1d)
 
 Can you guess what would happen if we updated the `lastName` property on the `personCopy` object?
 
@@ -162,7 +162,7 @@ console.log(person.lastName); // ??
 
 Let's check out the visual representation of what happens under the hood:
 
-![](https://hackmd.io/_uploads/BklP_9yn2.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/59667eed-24cd-4e09-a395-1ec0623181ee)
 
 First, the `lastName` property stops pointing at the string value `"Doe"` to start pointing to the string value `"Lockhart"`. So far, so good. The issue is that objects are not primitive values: a variable that points to an object is actually _pointing to a reference of that object_. Since `personCopy` **points to the same object reference** that `person` does, it also updates `person.lastName`! _We have mutated the original object_ without realizing it.
 
@@ -201,15 +201,15 @@ console.log(person1 === person2); // ??
 
 Let's see what happens line by line. First, we create the `person1` object:
 
-![](https://hackmd.io/_uploads/SkwY3qk2h.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/0a22275b-166f-4c92-9479-d221cc3c99d2)
 
 Then, we create the `person2` object:
 
-![](https://hackmd.io/_uploads/BklA25J33.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/66381611-b82f-406d-8aab-80a972a10670)
 
 This is the current picture of our code:
 
-![](https://hackmd.io/_uploads/S14gTcJ32.png)
+![image](https://github.com/lauraferrandof/lauraferrandof.github.io/assets/44445988/849aeaa9-50b5-4d5a-a058-5e8a5576e81d)
 
 As we can see, `person1` and `person2` are _pointing to two different object references_. With all we've learned so far, what is going to get logged into the console?
 

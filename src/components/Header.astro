@@ -45,17 +45,17 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
-            <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
+            <a href="/posts/" class={activeNav === 'posts' ? 'active' : ''}>
               Posts
             </a>
           </li>
           <li>
-            <a href="/tags/" class={activeNav === "tags" ? "active" : ""}>
+            <a href="/tags/" class={activeNav === 'tags' ? 'active' : ''}>
               Tags
             </a>
           </li>
           <li>
-            <a href="/about/" class={activeNav === "about" ? "active" : ""}>
+            <a href="/about/" class={activeNav === 'about' ? 'active' : ''}>
               About
             </a>
           </li>
@@ -63,7 +63,7 @@ const { activeNav } = Astro.props;
             <LinkButton
               href="/search/"
               className={`focus-outline p-3 sm:p-1 ${
-                activeNav === "search" ? "active" : ""
+                activeNav === 'search' ? 'active' : ''
               } flex`}
               ariaLabel="search"
               title="Search"
@@ -187,24 +187,24 @@ const { activeNav } = Astro.props;
 <script>
   function toggleNav() {
     // Toggle menu
-    const menuBtn = document.querySelector(".hamburger-menu");
-    const menuIcon = document.querySelector(".menu-icon");
-    const menuItems = document.querySelector("#menu-items");
+    const menuBtn = document.querySelector('.hamburger-menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const menuItems = document.querySelector('#menu-items');
 
-    menuBtn?.addEventListener("click", () => {
-      const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-      menuIcon?.classList.toggle("is-active");
-      menuBtn.setAttribute("aria-expanded", menuExpanded ? "false" : "true");
+    menuBtn?.addEventListener('click', () => {
+      const menuExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuIcon?.classList.toggle('is-active');
+      menuBtn.setAttribute('aria-expanded', menuExpanded ? 'false' : 'true');
       menuBtn.setAttribute(
-        "aria-label",
-        menuExpanded ? "Open Menu" : "Close Menu"
+        'aria-label',
+        menuExpanded ? 'Open Menu' : 'Close Menu'
       );
-      menuItems?.classList.toggle("display-none");
+      menuItems?.classList.toggle('display-none');
     });
   }
 
   toggleNav();
 
   // Runs on view transitions navigation
-  document.addEventListener("astro:after-swap", toggleNav);
+  document.addEventListener('astro:after-swap', toggleNav);
 </script>

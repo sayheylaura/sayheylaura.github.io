@@ -1,12 +1,12 @@
-import Fuse from "fuse.js";
-import { useEffect, useRef, useState, useMemo, type FormEvent } from "react";
-import Card from "@components/Card";
-import type { CollectionEntry } from "astro:content";
+import Fuse from 'fuse.js';
+import { useEffect, useRef, useState, useMemo, type FormEvent } from 'react';
+import Card from '@components/Card';
+import type { CollectionEntry } from 'astro:content';
 
 export type SearchItem = {
   title: string;
   description: string;
-  data: CollectionEntry<"blog">["data"];
+  data: CollectionEntry<'blog'>['data'];
   slug: string;
 };
 
@@ -66,10 +66,10 @@ export default function SearchBar({ searchList }: Props) {
       const searchParams = new URLSearchParams(window.location.search);
       searchParams.set('q', inputVal);
       const newRelativePathQuery =
-        window.location.pathname + "?" + searchParams.toString();
-      history.replaceState(history.state, "", newRelativePathQuery);
+        window.location.pathname + '?' + searchParams.toString();
+      history.replaceState(history.state, '', newRelativePathQuery);
     } else {
-      history.replaceState(history.state, "", window.location.pathname);
+      history.replaceState(history.state, '', window.location.pathname);
     }
   }, [inputVal]);
 

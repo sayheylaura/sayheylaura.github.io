@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lauraferrandof.github.io/',
+  site: 'https://sayheylaura.github.io/',
   integrations: [
     tailwind({
       config: {

@@ -48,7 +48,7 @@ npm run dev
 
 ## ✨ Feedback & Suggestions
 
-If you have any suggestions/feedback, you can contact me via [email](mailto:lauraferrandof@gmail.com). Alternatively, feel free to open an issue if you find bugs or want to request new topics for the blog!
+If you have any suggestions/feedback, feel free to open an issue if you find bugs or want to request new topics for the blog!
 
 ## 📜 License
 

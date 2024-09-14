@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from './types';
 
 export const SITE: Site = {
-  website: 'https://lauraferrandof.github.io/',
+  website: 'https://sayheylaura.github.io/',
   author: 'Laura Ferrando',
   desc: 'My journey to frontend development and beyond',
   title: "The Hitchhiker's Guide to the Web",
@@ -20,7 +20,7 @@ export const LOCALE = {
 export const SOCIALS: SocialObjects = [
   {
     name: 'Github',
-    href: 'https://github.com/lauraferrandof',
+    href: 'https://github.com/sayheylaura',
     linkTitle: 'Follow me on Github!',
     active: true,
   },

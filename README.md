@@ -21,7 +21,7 @@ This blog has been created with the awesome [AstroPaper template](https://github
 If you want to take a look at this project locally, run the following commands:
 
 ```bash
-git clone https://github.com/lauraferrandof/lauraferrandof.github.io.git
+git clone https://github.com/sayheylaura/sayheylaura.github.io.git
 ```
 
 ```bash

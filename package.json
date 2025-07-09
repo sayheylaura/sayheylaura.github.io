@@ -1,7 +1,22 @@
 {
-  "name": "astro-paper",
-  "version": "2.3.0",
-  "private": false,
+  "name": "the-hitchhikers-guide-to-the-web",
+  "version": "2.3.1",
+  "description": "A personal blog about software development, frontend-focused, built with Astro.",
+  "author": {
+    "name": "Laura Ferrando Ferrero",
+    "url": "https://github.com/sayheylaura"
+  },
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sayheylaura/sayheylaura.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/sayheylaura/sayheylaura.github.io/issues"
+  },
+  "homepage": "https://sayheylaura.github.io/",
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",

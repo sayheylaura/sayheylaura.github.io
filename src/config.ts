@@ -3,6 +3,7 @@ import type { Site, SocialObjects } from './types';
 export const SITE: Site = {
   website: 'https://sayheylaura.github.io/',
   author: 'Laura Ferrando',
+  alias: 'sayheylaura',
   desc: 'My journey to frontend development and beyond',
   title: "The Hitchhiker's Guide to the Web",
   ogImage: 'main-og-image.png',
@@ -14,9 +15,9 @@ export const LOCALE = ['en-EN']; // set to [] to use the environment default
 
 export const SOCIALS: SocialObjects = [
   {
-    name: 'Github',
+    name: 'GitHub',
     href: 'https://github.com/sayheylaura',
-    linkTitle: 'Follow me on Github!',
+    linkTitle: 'Follow me on GitHub!',
     active: true,
   },
   {

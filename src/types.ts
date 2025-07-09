@@ -1,6 +1,7 @@
 export type Site = {
   website: string;
   author: string;
+  alias: string;
   desc: string;
   title: string;
   ogImage: string;
@@ -19,4 +20,4 @@ export type SocialIcons = {
   [social in SocialMedia]: string;
 };
 
-export type SocialMedia = 'Github' | 'LinkedIn' | 'Mail';
+export type SocialMedia = 'GitHub' | 'LinkedIn' | 'Mail';

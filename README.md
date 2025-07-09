@@ -52,4 +52,4 @@ If you have any suggestions/feedback, feel free to open an issue if you find bug
 
 ## 📜 License
 
-Licensed under the MIT License, Copyright © 2023
+Licensed under the MIT License, Copyright © 2025
